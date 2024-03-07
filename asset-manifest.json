@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/word-code/static/css/main.e0311b35.css",
+    "main.js": "/word-code/static/js/main.6a719047.js",
+    "static/js/453.4aae6c8f.chunk.js": "/word-code/static/js/453.4aae6c8f.chunk.js",
+    "index.html": "/word-code/index.html",
+    "main.e0311b35.css.map": "/word-code/static/css/main.e0311b35.css.map",
+    "main.6a719047.js.map": "/word-code/static/js/main.6a719047.js.map",
+    "453.4aae6c8f.chunk.js.map": "/word-code/static/js/453.4aae6c8f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e0311b35.css",
+    "static/js/main.6a719047.js"
+  ]
+}

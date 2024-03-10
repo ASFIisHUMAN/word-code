@@ -20,11 +20,11 @@ const Header = ({ toggleComponent }) => {
       <nav>
         <div className="logo">ASFI</div>
        <label htmlFor="r"> <div className="switch" >
-          <label htmlFor="r"><h1 className='hh'>{moded ? '' : 'Code'}</h1></label>
+          <label htmlFor="r"><h1 className='hh'>{moded ? 'Decode' : 'Code'}</h1></label>
           <label className="switch-label" >
             <input type="checkbox" onChange={handleToggle} checked={!isReverseTextVisible} id='r'/>
             <span className="slider round"></span>
-          </label><label htmlFor="r"><h1>{moded ? 'Decode' : ''}</h1></label>
+          </label>
         </div></label>
       </nav>
     </header>

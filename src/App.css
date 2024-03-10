@@ -37,7 +37,7 @@ label{
   font-family: cursive, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .hh{
-  padding-right: 10px;
+  padding-bottom: 2.5px;
 }
 .switch {
   display: flex;
@@ -121,6 +121,9 @@ label{
   .copy-button:hover {
     background-color: rgb(49, 42, 74);
     color: rgb(255,255,255);
+  }
+  .switch-label{
+    padding-right: 50px;
   }
 }
 
@@ -227,7 +230,6 @@ footer{
   min-height: 10vh;
   max-width: 97vw;
   display: flex;
-  overflow-wrap: flex-end;
   min-width: 97vw;
   margin-top: 10vh;
   border-radius: 15px;
@@ -287,6 +289,13 @@ footer{
 
 @media (orientation: portrait) {
 
+.social-icons a {
+  font-size: large;
+}
+.social-icons a i,
+.social-icons a svg{
+  font-size: x-large;
+}
   .footer-container {
     flex-direction: column;
     align-items: center;
@@ -306,9 +315,6 @@ footer{
     min-height: 10vh;
     min-width: 97vw;
     max-width: 97vw;
-    display: flex;
-    overflow-wrap: flex-end;
-    
-    
+    display: flex;       
   }
 }

@@ -4,6 +4,7 @@ body{
   background-color: rgb(62, 65, 87);  
 }
 header{
+  margin-top: 25px;
   height: 10vh;
   max-width: 97vw;
 }
@@ -19,6 +20,7 @@ label{
   cursor: pointer;
 }
 .header {
+  height: 100%;
   border-radius: 30px;
   background-color: rgb(64, 10, 150);
   color: #fff;
@@ -27,7 +29,7 @@ label{
   justify-content: space-between;
   align-items: center;
   position: relative;
-  
+  flex-direction: row;
 }
 
 .logo {
@@ -41,11 +43,8 @@ label{
 }
 .switch {
   display: flex;
-  position: absolute;
   align-items: center;
-  right: 0;
   margin-right: 10px;
-  top: 2.5vh;
   padding-right: 20px;
 }
 
@@ -203,7 +202,7 @@ border-radius: 30px;
   position: absolute;
   bottom: 0;
   right: 0;
-  width: 70; /* Adjust button width as needed */
+  width: 70;
   height: 50px;
   display: flex;
   align-items: center;
@@ -215,6 +214,9 @@ border-radius: 30px;
 
 
 @media(orientation: portrait){
+  header{
+    margin-top: 10px;
+  }
 .input{
   min-width: calc(100% - 50px); 
   max-width: calc(100% - 50px); 

@@ -82,7 +82,7 @@ const ReverseText = () => {
         if (lowerChar in variables) {
             return variables[lowerChar][Math.floor(Math.random() * variables[lowerChar].length)];
         } else {
-            return "No variable associated with this character";
+            return "No caracter associated with this character";
         }
     };
 

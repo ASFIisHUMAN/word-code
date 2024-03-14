@@ -16,8 +16,8 @@ const Header = ({ toggleComponent }) => {
   };
 
   return (
-    <header className='header'>
-      <nav>
+    
+      <nav className='header'>
         <div className="logo">ASFI</div>
        <label htmlFor="r"> <div className="switch" >
           <label htmlFor="r"><h1 className='hh'>{moded ? 'Decode' : 'Code'}</h1></label>
@@ -27,7 +27,7 @@ const Header = ({ toggleComponent }) => {
           </label>
         </div></label>
       </nav>
-    </header>
+    
   );
 };
 

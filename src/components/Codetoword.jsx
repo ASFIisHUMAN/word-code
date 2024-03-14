@@ -110,7 +110,7 @@ try {
 
             }, 5000);
         }else if (input1.includes("a") || input1.includes("+a") || input1.includes("a+") ) {
-            codetoword("b1245+ b9780+ b002+ b3298+ b002+ b09318+ b008+ b313+ b44+ b002+ b000+ b9821+ b1971+ b704+ b1469+ b348+ b29+ b191+ b9814+ b008+ b348+ b79+ b191+ b9821+ b9814+ b94+ b29+ b191+ b100+ b008")
+            codetoword("b206+ b313+ b1111+ b8624+ b1985+ b101+ b1973+ b09318+ b213+ b69+ b9814+ b002+ b9821+ b104+ b159+ b002+ b100+ b83")
             setDecoding(true);
             setTimeout(() => {
                 setInput1(a.target.value="");
@@ -145,6 +145,19 @@ try {
         }).join('. '); 
         setOutput(newOutput);
     }, [output]);
+
+    useEffect(() => {
+       
+        const newOutput = output.split('\n').map((sentence) => {
+            const trimmedSentence = sentence.trim();
+            if (trimmedSentence.length === 0) return ''; // Ignore empty sentences 
+            const firstLetter = trimmedSentence[0].toUpperCase(); 
+            const restOfSentence = trimmedSentence.slice(1);
+            return firstLetter + restOfSentence;
+        }).join('\n'); 
+        setOutput(newOutput);
+    }, [output]);
+
     
     useEffect(() => {
         let i = 0;

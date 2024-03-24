@@ -8,7 +8,8 @@ const ReverseText = () => {
     const [decoding, setDecoding] = useState(false);
     const textareaRef = useRef(null);
 
-    const a = "the quick=b40wn,fox!j6mps@2v1r/789-lazy:d3g._5?+\n"
+    const bt = "`";
+    const a = `^$the quick=b40wn*,fox!j6mps@2v1r/789-lazy:d3g._5?+\n"{(;)]&[%}\\<#>'|~${bt}`;
 
     useEffect(() => {
         adjustTextareaRows(); // Initially adjust textarea rows
@@ -77,6 +78,28 @@ const ReverseText = () => {
         variables[a[46]] = ['b30682','b06401','b73081'];
         variables[a[47]] = ['b2209','b98564','b229907'];
         variables[a[48]] = ['b19','b96120','b26008'];
+        variables[a[49]] = ['b0797','b694','b225'];
+        variables[a[50]] = ['b809','b139','b7401'];
+        variables[a[51]] = ['b635','b9836','b27006'];
+        variables[a[52]] = ['b96654','b87654','b236'];
+        variables[a[53]] = ['b9856','b3256','b7789'];
+        variables[a[54]] = ['b854','b5645','b00548'];
+        variables[a[55]] = ['b0560','b80860','b8061'];
+        variables[a[56]] = ['b4613','b05358','b8523'];
+        variables[a[57]] = ['b50068','b3504','b56258'];
+        variables[a[58]] = ['b0340','b53528','b6037'];
+        variables[a[59]] = ['b0856','b820','b9456'];
+        variables[a[60]] = ['b5875','b0532','b8708'];
+        variables[a[61]] = ['b9654','b3571','b9863'];
+        variables[a[62]] = ['b0132','b9752','b4503'];
+        variables[a[63]] = ['b9875','b3068','b98703'];
+        variables[a[64]] = ['b405','b9804','b69852'];
+        variables[a[65]] = ['b3269','b0033','b852'];
+        variables[a[66]] = ['b6361','b7835','b4569'];
+        variables[a[67]] = ['b1236','b9853','b74369'];
+        variables[a[68]] = ['b98007','b35404','b66044'];
+        variables[a[69]] = ['b33049','b25646','b5978'];
+        // variables[a[70]] = ['b8902','b5469','b897'];
 
         const lowerChar = char.toLowerCase();
         if (lowerChar in variables) {
@@ -110,7 +133,7 @@ const ReverseText = () => {
                 setInputText("");
                 setDecoding(false);
                 setReversedText('');
-            }, 5000);
+            }, 3000);
         }
     };
 
@@ -138,8 +161,8 @@ const ReverseText = () => {
 
     const adjustTextareaRows = () => {
         if (textareaRef.current) {
-            textareaRef.current.style.height = 'auto'; // Reset textarea height
-            textareaRef.current.style.height = textareaRef.current.scrollHeight + 'px'; // Set textarea height based on content
+            textareaRef.current.style.height = 'auto';
+            textareaRef.current.style.height = textareaRef.current.scrollHeight + 'px'; 
         }
     };
     const clear = () => {
